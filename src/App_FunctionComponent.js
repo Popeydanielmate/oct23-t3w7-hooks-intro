@@ -1,0 +1,20 @@
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  
+  const [message, setMessage] = useState("Hello World");
+  const [state2, setState2] = useState("e");
+
+  return (
+    <div className="App">
+      <h1>{message}</h1>
+      {/* <h1>{state}{state2}</h1> */}
+      <button onClick={() => setMessage(321456987)}>
+        Change message
+      </button>
+    </div>
+  );
+}
+
+export default App;
